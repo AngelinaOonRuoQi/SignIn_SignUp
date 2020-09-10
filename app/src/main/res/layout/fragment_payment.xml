@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/image_profile_background"
+    tools:context=".PaymentFragment">
+
+    <TextView
+        android:id="@+id/title_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Payment Visa"
+        android:textColor="@android:color/black"
+        android:textSize="36dp" />
+
+    <ImageView
+        android:id="@+id/imageViewStep"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_action_step" />
+
+    <ImageView
+        android:id="@+id/imageViewLine1"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_baseline_drag_stepline" />
+
+    <ImageView
+        android:id="@+id/imageViewLine2"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_baseline_drag_stepline" />
+
+    <ImageView
+        android:id="@+id/imageViewStep2"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_action_step" />
+
+    <ImageView
+        android:id="@+id/imageViewLine3"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_baseline_drag_stepline" />
+
+    <ImageView
+        android:id="@+id/imageViewLine4"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/ic_baseline_drag_stepline" />
+
+    <ImageView
+        android:id="@+id/imageViewStep3"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="46dp"
+        android:src="@drawable/ic_action_step" />
+
+    <TextView
+        android:id="@+id/textViewPersona"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="  Personal Details"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="382dp"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="364dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_button1"
+        android:ems="10"
+        android:hint="  Name:"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/design_default_color_on_secondary" />
+
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="363dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button1"
+        android:ems="10"
+        android:hint=" Email:"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="365dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="235dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_button1"
+        android:ems="10"
+        android:hint="  Contact Number:"
+        android:inputType="phone"
+        android:textColorHint="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textViewPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:text="  Payment Details"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="382dp"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textViewCardNumber"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="330dp"
+        android:text="Card Number(**** **** **** ****)"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="333dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_button1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewCardValidDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="400dp"
+        android:text="Valid date(**/**)"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextValidDate"
+        android:layout_width="130dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rounded_button1"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textViewCVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="400dp"
+        android:text="CVC Code (on the back)"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="145dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rounded_button1"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/cancel_button"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/button_process"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/process_button"
+        android:text="Process" />
+
+</RelativeLayout>

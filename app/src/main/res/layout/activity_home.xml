@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="200dp"
+                android:layout_height="124dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/view2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:lines="2"
+                android:text="Good Afternoon,"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
+                android:textSize="20sp"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Coco"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="200dp"
+                android:text="@string/new_arrivals"
+                android:textColor="#454545"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="9dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:layout_editor_absoluteX="20dp"
+                tools:ignore="NestedScrolling">
+
+                <HorizontalScrollView
+                    android:id="@+id/HSV1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_vertical"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:id="@+id/RL1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonImage1"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/book1"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBook1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImage1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:text="@string/txtNewArrivals_book1"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonImage2"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/buttonImage1"
+                            android:background="@drawable/book2"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBook2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImage2"
+                            android:layout_alignStart="@+id/buttonImage2"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/txtNewArrivals_book2"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonImage3"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/buttonImage2"
+                            android:background="@drawable/book3"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBook3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImage3"
+                            android:layout_alignStart="@+id/buttonImage3"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/txtNewArrivals_book3"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonImage4"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/buttonImage3"
+                            android:background="@drawable/book4"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBook4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImage4"
+                            android:layout_alignStart="@+id/buttonImage4"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/txtNewArrivals_book4"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txtPopular"
+                android:textColor="#454545"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                tools:ignore="NotSibling" />
+
+            <ScrollView
+                android:id="@+id/scrollView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                tools:layout_editor_absoluteX="20dp"
+                tools:ignore="NestedScrolling">
+
+                <HorizontalScrollView
+                    android:id="@+id/HSV2"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_vertical"
+                    android:scrollbars="none"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    tools:ignore="MissingConstraints">
+
+                    <RelativeLayout
+                        android:id="@+id/RL2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/buttonImagePopular1"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/book6"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView3"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBookPopular1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImagePopular1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:text="@string/txtPopular_book1"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonImagePopular2"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/buttonImagePopular1"
+                            android:background="@drawable/book7"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView3"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBookPopular2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImagePopular2"
+                            android:layout_alignStart="@+id/buttonImagePopular2"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/txtPopular_book2"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonImagePopular3"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/buttonImagePopular2"
+                            android:background="@drawable/book8"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView3"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBookPopular3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImagePopular3"
+                            android:layout_alignStart="@+id/buttonImagePopular3"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/txtPopular_book3"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/buttonImagePopular4"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/buttonImagePopular4"
+                            android:background="@drawable/book9"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="@+id/scrollView3"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/txtBookPopular4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/buttonImagePopular4"
+                            android:layout_alignStart="@+id/buttonImagePopular4"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="@string/txtPopular_book4"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="203dp"
+                android:layout_height="132dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                android:layout_toEndOf="@+id/view2"
+                app:srcCompat="@drawable/image_home"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:id="@+id/TV_Suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/TV_suggestion"
+                android:textColor="#454545"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:id="@+id/SV_Suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TV_Suggestion"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                tools:ignore="NestedScrolling">
+
+                <HorizontalScrollView
+                    android:id="@+id/HSV_Suggestion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center_vertical"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:id="@+id/RL_Suggestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/SuggestionImage1"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="15dp"
+                            android:background="@drawable/book1"
+                            android:scaleType="centerCrop"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/SuggestionBook1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SuggestionImage1"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="15dp"
+                            android:text="Camino Winds"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/SuggestionImage2"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/SuggestionImage1"
+                            android:background="@drawable/book2"
+                            android:scaleType="centerCrop"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/SuggestionBook2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SuggestionImage2"
+                            android:layout_alignStart="@+id/SuggestionImage2"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Deacon King Kong: A Novel"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/SuggestionImage3"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/SuggestionImage2"
+                            android:background="@drawable/book3"
+                            android:scaleType="centerCrop"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/SuggestionBook3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SuggestionImage3"
+                            android:layout_alignStart="@+id/SuggestionImage3"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="The Nickel Boys: Winner of the Pulitzer Prize for Fiction 2020"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/SuggestionImage4"
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:layout_marginStart="21dp"
+                            android:layout_toEndOf="@+id/SuggestionImage3"
+                            android:background="@drawable/book4"
+                            android:scaleType="centerCrop"
+                            tools:ignore="NotSibling"
+                            tools:layout_editor_absoluteX="0dp" />
+
+                        <TextView
+                            android:id="@+id/SuggestionBook4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/SuggestionImage4"
+                            android:layout_alignStart="@+id/SuggestionImage4"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Eleanor Oliphant is completely fine: A Novel"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

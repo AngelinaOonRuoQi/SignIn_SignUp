@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">LifeStyle Library</string>
+    <string name="date">Birth date(dd/mm/yy)</string>
+    <string name="phone">Telephone number</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="email">Email Address</string>
+    <string name="go_main_page_1">Main page</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name">Name</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="si_password">Password</string>
+    <string name="let_s_get_started">Let\'s get started!</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="main_sign_in">Sign In</string>
+    <string name="main_sign_up">Sign Up</string>
+    <string name="si_name">Name</string>
+    <string name="si_email">Email address</string>
+    <string name="back_main_page">Main page</string>
+    <string name="title_activity_sign_in">SignIn</string>
+
+    <string name="categories_hobbies_crafts"><![CDATA[Hobbies & Crafts]]></string>
+    <string name="categories_sports">Sports</string>
+    <string name="TV_suggestion">Suggestion</string>
+    <string name="categories_cooking">Cooking</string>
+    <string name="categories_travel">Travel</string>
+    <string name="categories_business">Business</string>
+    <string name="categories_education_reference"><![CDATA[Education & Reference]]></string>
+    <string name="categories_science_math"><![CDATA[Science & Math]]></string>
+    <string name="categories_health_fitness"><![CDATA[Health & Fitness]]></string>
+    <string name="categories_art_music"><![CDATA[Art & Music]]></string>
+    <string name="hint_search">Search by book title, author</string>
+    <string name="categories">Categories</string>
+    <string name="top_author">Top Author</string>
+    <string name="todo">TODO</string>
+    <string name="home_main">Home</string>
+    <string name="explore_main">Explore</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="txtNewArrivals_book3">The Nickel Boys: Winner of the Pulitzer Prize for Fiction 2020</string>
+    <string name="txtNewArrivals_book1">Camino Winds</string>
+    <string name="txtNewArrivals_book2">Deacon King Kong: A Novel</string>
+    <string name="txtNewArrivals_book4">Eleanor Oliphant is completely fine: A Novel</string>
+    <string name="txtPopular">Popular</string>
+    <string name="txtPopular_book1"><![CDATA[Trust No One (Devlin & Falco Book 1)]]></string>
+    <string name="txtPopular_book2">The Last of the Moon Girls</string>
+    <string name="txtPopular_book3">The Nickel Boys: Winner of the Pulitzer Prize for Fiction 2020</string>
+    <string name="txtPopular_book4">Mary L.Trump</string>
+    <string name="AuthorName1">Armando Lucas Correa</string>
+    <string name="AuthorName2">Jess Kidd</string>
+    <string name="AuthorName3">Martha McPhee</string>
+    <string name="AuthorName4">Isabel Allende</string>
+    <string name="AuthorName5">Rebecca Serle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

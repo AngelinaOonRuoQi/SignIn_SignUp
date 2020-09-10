@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactFragment">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="412dp"
+        android:layout_height="710dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image42" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="305dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="88dp"
+        android:background="#005D4763"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBackground"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleContact"
+        app:srcCompat="@drawable/image81_removebg_preview" />
+
+    <TextView
+        android:id="@+id/titleContact"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Contact Us"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="369dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Are you facing any problems? Please Contact Us quickly, We will  reply as soon as possible. "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleContact" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="308dp"
+        android:drawablePadding="100dp"
+        android:text="write to us"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button_gmail"
+        android:layout_width="351dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_button1"
+        android:drawableLeft="@drawable/ic_action_mail"
+        android:paddingLeft="30dip"
+        android:paddingRight="26dip"
+        android:text="lifestyle@gmail.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="92dp"
+        android:text="call us"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button_phone"
+        android:layout_width="349dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/rounded_button1"
+        android:drawableLeft="@drawable/ic_action_phone"
+        android:paddingLeft="30dip"
+        android:paddingRight="26dip"
+        android:text="+03 5678 9999"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_gmail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
