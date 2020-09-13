@@ -32,7 +32,8 @@ public class HomeActivity extends AppCompatActivity {
                             startActivity(explore);
                             return true;
                         case R.id.navigation_history:
-
+                            Intent history = new Intent(HomeActivity.this, HistoryActivity.class);
+                            startActivity(history);
                             return true;
                         case R.id.navigation_profile:
                             Intent profile = new Intent(HomeActivity.this,ProfileActivity.class);

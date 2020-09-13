@@ -7,6 +7,15 @@
     android:background="@drawable/image_profile_background"
     tools:context=".ProfileActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewExplore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+
 
     <TextView
         android:id="@+id/My_Profile"
@@ -18,28 +27,11 @@
         android:textSize="36dp" />
 
     <Button
-        android:id="@+id/button_fav"
-        android:layout_width="184dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="190dp"
-        android:background="#FFFFFF"
-        android:foreground="@drawable/ic_action_favourite"
-        android:foregroundGravity="bottom|clip_horizontal|right"
-        android:gravity="start"
-        android:paddingStart="10dp"
-        android:paddingTop="10dp"
-        android:paddingEnd="10dp"
-        android:text="My favourite"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/button_cart"
-        android:layout_width="180dp"
-        android:layout_height="138dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="190dp"
+        android:layout_width="348dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
         android:background="#FFFFFF"
         android:foreground="@drawable/ic_action_cart"
         android:foregroundGravity="bottom|clip_horizontal|right"
@@ -48,15 +40,16 @@
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
         android:text="My Cart"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_contact"
-        android:layout_width="182dp"
-        android:layout_height="135dp"
+        android:layout_width="348dp"
+        android:layout_height="76dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:background="#FFFFFF"
         android:foreground="@drawable/ic_action_contactus"
         android:foregroundGravity="bottom|clip_horizontal|right"
@@ -65,15 +58,16 @@
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
         android:text="Contact Us"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_settings"
-        android:layout_width="180dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="350dp"
+        android:layout_width="347dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="400dp"
         android:background="#FFFFFF"
         android:foreground="@drawable/ic_action_setting"
         android:foregroundGravity="bottom|clip_horizontal|right"
@@ -82,6 +76,7 @@
         android:paddingTop="10dp"
         android:paddingEnd="10dp"
         android:text="Settings"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

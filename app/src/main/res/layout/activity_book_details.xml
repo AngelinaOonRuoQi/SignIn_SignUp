@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookDetailsActivity"
+    android:background="@drawable/bg1" android:alpha="0.7">
+
+    <TextView
+        android:id="@+id/text_book_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="105dp"
+        android:text="Book Details"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="25dp"
+        android:scaleType="fitStart"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_toEndOf="@+id/product_image"
+        android:text="@string/product_name"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/product_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_toEndOf="@+id/product_image"
+        android:text="@string/product_author"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/product_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="product summary"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+
+    <Button
+        android:id="@+id/btn_borrow"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_image"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/rounded_button3"
+        android:drawableLeft="@drawable/ic_action_book"
+        android:onClick="borrowBook"
+        android:paddingLeft="20dp"
+        android:text="Borrow Now"
+        android:textStyle="bold" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="#FFFFFF"
+            app:itemIconTint="@color/design_default_color_on_secondary"
+            app:itemTextColor="#000000"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_menu" />
+
+
+</RelativeLayout>

@@ -101,7 +101,7 @@ public class ExploreActivity extends AppCompatActivity {
                         holder.itemView.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(ExploreActivity.this, BorrowBook.class);
+                                Intent intent = new Intent(ExploreActivity.this, BookDetailsActivity.class);
                                 intent.putExtra("Title",model.getTitle());
                                 intent.putExtra("Author",model.getAuthor());
                                 startActivity(intent);
@@ -136,6 +136,8 @@ public class ExploreActivity extends AppCompatActivity {
 
                             return true;
                         case R.id.navigation_history:
+                            Intent history = new Intent(ExploreActivity.this, HistoryActivity.class);
+                            startActivity(history);
 
                             return true;
                         case R.id.navigation_profile:
