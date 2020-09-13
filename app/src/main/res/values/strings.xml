@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LifeStyle Library</string>
+    <string name="app_name">LifeStyle</string>
     <string name="date">Birth date(dd/mm/yy)</string>
     <string name="phone">Telephone number</string>
     <string name="emailAddress">Email Address</string>
@@ -19,6 +19,11 @@
     <string name="si_email">Email address</string>
     <string name="back_main_page">Main page</string>
     <string name="title_activity_sign_in">SignIn</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password">forgot_password</string>
 
     <string name="categories_hobbies_crafts"><![CDATA[Hobbies & Crafts]]></string>
     <string name="categories_sports">Sports</string>
@@ -51,6 +56,10 @@
     <string name="AuthorName3">Martha McPhee</string>
     <string name="AuthorName4">Isabel Allende</string>
     <string name="AuthorName5">Rebecca Serle</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_author">Product Author</string>
+    <string name="txtSuggestion_book1">The Weight of Our Sky</string>
+    <string name="txtSuggestion_book2">Of Mice and Men</string>
+    <string name="txtSuggestion_book3">Beauty and the Beast Novelization</string>
+    <string name="txtSuggestion_book4">Hector and the Search for Lost Time: A Novel (Hector\'s Journeys)</string>
 </resources>

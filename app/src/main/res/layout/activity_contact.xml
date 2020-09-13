@@ -78,7 +78,7 @@
       android:drawableLeft="@drawable/ic_action_mail"
       android:paddingLeft="30dip"
       android:paddingRight="26dip"
-      android:text="lifestyle@gmail.com"
+      android:text="lifestylelibrary77@gmail.com"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -103,7 +103,7 @@
       android:drawableLeft="@drawable/ic_action_phone"
       android:paddingLeft="30dip"
       android:paddingRight="26dip"
-      android:text="+03 5678 9999"
+      android:text="+0166885723"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/button_gmail" />
 

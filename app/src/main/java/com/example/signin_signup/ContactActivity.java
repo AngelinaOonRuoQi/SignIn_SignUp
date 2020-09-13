@@ -22,7 +22,7 @@ public class ContactActivity extends AppCompatActivity {
             @Override
             public void onClick(View view){
                 Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse("tel:0356789999"));
+                callIntent.setData(Uri.parse("tel:0166885723"));
                 startActivity(callIntent);
             }
         });

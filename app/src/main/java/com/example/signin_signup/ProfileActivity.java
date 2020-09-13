@@ -1,55 +1,68 @@
 package com.example.signin_signup;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-
-public class NavigationActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigation;
+    Button contact,cart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_navigation);
+        setContentView(R.layout.activity_profile);
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
+        contact= (Button)findViewById(R.id.button_contact);
+        contact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProfileActivity.this,ContactActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        cart= (Button)findViewById(R.id.button_cart);
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProfileActivity.this,CartActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
-
-
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.navigation_home:
-                          Intent home = new Intent(NavigationActivity.this,HomeActivity.class);
-                          startActivity(home);
+                            Intent home = new Intent(ProfileActivity.this,HomeActivity.class);
+                            startActivity(home);
                             return true;
                         case R.id.navigation_explore:
-                            Intent explore = new Intent(NavigationActivity.this,ExploreActivity.class);
+                            Intent explore = new Intent(ProfileActivity.this,ExploreActivity.class);
                             startActivity(explore);
-
                             return true;
                         case R.id.navigation_history:
 
                             return true;
                         case R.id.navigation_profile:
-                            Intent profile = new Intent(NavigationActivity.this,ProfileActivity.class);
+                            Intent profile = new Intent(ProfileActivity.this,ProfileActivity.class);
                             startActivity(profile);
                             return true;
                     }
                     return false;
                 }
             };
-
-
 }
