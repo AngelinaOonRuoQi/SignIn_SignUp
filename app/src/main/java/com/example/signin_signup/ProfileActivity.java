@@ -14,7 +14,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class ProfileActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigation;
-    Button contact,cart;
+    Button contact,cart,setting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +40,14 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        setting= (Button)findViewById(R.id.button_settings);
+        setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProfileActivity.this,Setting.class);
+                startActivity(intent);
+            }
+        });
 
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

@@ -23,8 +23,9 @@ import java.util.TimeZone;
 public class BorrowBookActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigation;
-    private  Button btnChooseDate;
+    private Button btnChooseDate,confirm;
     private TextView mSelectedDates;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +44,15 @@ public class BorrowBookActivity extends AppCompatActivity {
         builder.setTitleText("Choose A Date : ");
 
         final MaterialDatePicker<Pair<Long, Long>> materialDatePicker = builder.build();
+
+        confirm =(Button)findViewById(R.id.btn_confirm);
+        confirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(BorrowBookActivity.this,ExploreActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnChooseDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +76,10 @@ public class BorrowBookActivity extends AppCompatActivity {
 
 
         });
+
+
     }
+
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -92,9 +105,5 @@ public class BorrowBookActivity extends AppCompatActivity {
                     return false;
                 }
             };
-
-
-
-
 
 }

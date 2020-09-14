@@ -29,7 +29,7 @@
         android:background="@drawable/rounded_button2"
         android:ems="10"
         android:fontFamily="sans-serif-medium"
-        android:hint="Search by book title"
+        android:hint="@string/search_by_book_title"
         android:inputType="textPersonName"
         android:paddingStart="15dp"
         android:textAllCaps="false"

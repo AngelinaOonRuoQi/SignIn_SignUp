@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="140dp"
         android:layout_marginTop="4dp"
-        android:text="My Cart"
+        android:text="@string/my_cart"
         android:textColor="@android:color/black"
         android:textSize="36dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginBottom="72dp"
         android:background="@drawable/checkout_button"
-        android:text="Check out"
+        android:text="@string/check_out"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -45,7 +45,7 @@
         android:layout_height="45dp"
         android:layout_marginBottom="10dp"
         android:background="@color/colorWhite"
-        android:text="  Sub Total :"
+        android:text="@string/sub_total"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="18sp"

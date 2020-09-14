@@ -1,16 +1,16 @@
 package com.example.signin_signup.model;
 
-public class Cart
-{
-    private String Title,Author,Image;
+public class History {
+    private String Title,Author,Image,Summary;
 
-    public Cart() {
+    public History() {
     }
 
-    public Cart(String Title, String Author,String Image) {
-        this.Title = Title;
-        this.Author = Author;
-        this.Image=Image;
+    public History(String title, String author, String image, String summary) {
+        this.Title = title;
+        this.Author = author;
+        this.Image = image;
+        this.Summary = summary;
     }
 
     public String getTitle() {
@@ -36,5 +36,12 @@ public class Cart
     public void setImage(String Image) {
         this.Image = Image;
     }
-}
 
+    public String getSummary() {
+        return Summary;
+    }
+
+    public void setSummary(String Summary) {
+        this.Summary = Summary;
+    }
+}

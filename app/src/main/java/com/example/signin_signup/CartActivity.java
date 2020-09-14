@@ -7,30 +7,35 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.signin_signup.ViewHolder.CartViewHolder;
-import com.example.signin_signup.model.Cart;
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.example.signin_signup.model.Project;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 
 public class CartActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
+    RecyclerView recyclerView;
     private RecyclerView.LayoutManager layoutManager;
 
     private Button checkout;
     private TextView txtTotalAmount;
     private int overTotalPrice = 0;
     BottomNavigationView bottomNavigation;
+    private DatabaseReference CartRef;
+    private ArrayList<Project> bookList;
+    private CartAdapter cartAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,15 +43,22 @@ public class CartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cart);
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
         recyclerView = findViewById(R.id.cart_list);
-        recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
 
-        checkout = (Button) findViewById(R.id.button_checkout);
+
         txtTotalAmount = (TextView) findViewById(R.id.total_price);
 
+        CartRef = FirebaseDatabase.getInstance().getReference("Cart List");
 
+       bookList=new ArrayList<>();
+        GetData();
+        ClearAll();
+
+        checkout = (Button) findViewById(R.id.button_checkout);
         checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,38 +72,52 @@ public class CartActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-   public void onStart(){
-        super.onStart ();
-        final DatabaseReference cartListRef= FirebaseDatabase.getInstance().getReference().child("Cart List");
-        FirebaseRecyclerOptions<Cart>options =
-                new FirebaseRecyclerOptions.Builder<Cart>()
-                .setQuery(cartListRef.child("User View")
-                .child("Products"),Cart.class)
-                .build();
-        FirebaseRecyclerAdapter<Cart,CartViewHolder> adapter
-                = new FirebaseRecyclerAdapter<Cart, CartViewHolder>(options) {
-            @Override
-            protected void onBindViewHolder(@NonNull CartViewHolder holder, int i, @NonNull Cart cart) {
 
-                holder.txtBookName.setText(cart.getTitle());
-                holder.txtAuthor.setText(cart.getAuthor());
+    private void GetData() {
+        Query query = CartRef.child("Book");
+
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                ClearAll();
+
+                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
+                   Project project = new Project();
+
+
+                    project.setTitle(dataSnapshot.child("Title").getValue().toString());
+                    project.setAuthor(dataSnapshot.child("Author").getValue().toString());
+
+
+
+                    bookList.add(project);
+                }
+                cartAdapter = new CartAdapter(getApplicationContext(),bookList);
+                recyclerView.setAdapter(cartAdapter);
+                cartAdapter.notifyDataSetChanged();
+
+
 
             }
 
-            @NonNull
             @Override
-            public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cart_items_layout, parent, false);
-                CartViewHolder holder = new CartViewHolder(view);
-                return holder;
+            public void onCancelled(@NonNull DatabaseError error) {
 
             }
-
-        };
+        });
 
 
     }
+    private void ClearAll() {
+        if (bookList!=null){
+            bookList.clear();
+            if(cartAdapter!=null){
+                cartAdapter.notifyDataSetChanged();
+            }
+        }
+        bookList=new ArrayList<>();
+    }
+
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {

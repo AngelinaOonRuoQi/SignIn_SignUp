@@ -32,28 +32,6 @@
         android:textSize="30sp"
         android:textStyle="bold|italic" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout1"
-        android:layout_width="272dp"
-        android:layout_height="58dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="79dp"
-        android:layout_marginLeft="79dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="30dp">
-
-        <EditText
-            android:id="@+id/si_name"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_marginBottom="32dp"
-            android:hint="@string/si_name"
-            android:inputType="textPersonName" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout2"
         android:layout_width="272dp"

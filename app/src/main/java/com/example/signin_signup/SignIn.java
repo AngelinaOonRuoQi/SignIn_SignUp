@@ -24,7 +24,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class SignIn extends AppCompatActivity {
 
     private TextView gofirst,forgetPass;
-    private EditText si_name, si_email, si_password;
+    private EditText si_email, si_password;
     private Button si;
     private FirebaseAuth firebaseAuth;
 
@@ -33,7 +33,6 @@ public class SignIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        si_name = (EditText) findViewById(R.id.si_name);
         si_email = (EditText) findViewById(R.id.si_email);
         si_password = (EditText) findViewById(R.id.si_password);
         gofirst = (TextView) findViewById(R.id.backmain);
@@ -48,7 +47,7 @@ public class SignIn extends AppCompatActivity {
         si.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = si_name.getText().toString().trim();
+
                 String email = si_email.getText().toString().trim();
                 String password = si_password.getText().toString().trim();
                 firebaseAuth.signInWithEmailAndPassword(email, password)

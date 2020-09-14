@@ -20,7 +20,6 @@
     <string name="back_main_page">Main page</string>
     <string name="title_activity_sign_in">SignIn</string>
 
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="forgot_password">forgot_password</string>
@@ -42,14 +41,14 @@
     <string name="home_main">Home</string>
     <string name="explore_main">Explore</string>
     <string name="new_arrivals">New Arrivals</string>
-    <string name="txtNewArrivals_book3">The Nickel Boys: Winner of the Pulitzer Prize for Fiction 2020</string>
-    <string name="txtNewArrivals_book1">Camino Winds</string>
-    <string name="txtNewArrivals_book2">Deacon King Kong: A Novel</string>
-    <string name="txtNewArrivals_book4">Eleanor Oliphant is completely fine: A Novel</string>
+    <string name="txtNewArrivals_book3">The 5th Wave</string>
+    <string name="txtNewArrivals_book1">Library of Souls</string>
+    <string name="txtNewArrivals_book2">Coraline</string>
+    <string name="txtNewArrivals_book4">Crazy Rich Asians</string>
     <string name="txtPopular">Popular</string>
-    <string name="txtPopular_book1"><![CDATA[Trust No One (Devlin & Falco Book 1)]]></string>
-    <string name="txtPopular_book2">The Last of the Moon Girls</string>
-    <string name="txtPopular_book3">The Nickel Boys: Winner of the Pulitzer Prize for Fiction 2020</string>
+    <string name="txtPopular_book1">Twilight</string>
+    <string name="txtPopular_book2">Harry Potter and the Philosopher\'s Stone</string>
+    <string name="txtPopular_book3">The Fault in our Stars</string>
     <string name="txtPopular_book4">Mary L.Trump</string>
     <string name="AuthorName1">Armando Lucas Correa</string>
     <string name="AuthorName2">Jess Kidd</string>
@@ -58,8 +57,71 @@
     <string name="AuthorName5">Rebecca Serle</string>
     <string name="product_name">Product Name</string>
     <string name="product_author">Product Author</string>
-    <string name="txtSuggestion_book1">The Weight of Our Sky</string>
-    <string name="txtSuggestion_book2">Of Mice and Men</string>
-    <string name="txtSuggestion_book3">Beauty and the Beast Novelization</string>
-    <string name="txtSuggestion_book4">Hector and the Search for Lost Time: A Novel (Hector\'s Journeys)</string>
+    <string name="txtSuggestion_book1">Tiger\'s Curse</string>
+    <string name="txtSuggestion_book2">Pride and Prejudice</string>
+    <string name="txtSuggestion_book3">Life Without Limits</string>
+    <string name="txtSuggestion_book4">Bird Box</string>
+
+    <string name="settings">Settings</string>
+    <string name="account_security">Account Security</string>
+    <string name="password_setting">Password</string>
+    <string name="contact">Contact</string>
+    <string name="email_setting">Email</string>
+    <string name="general">General</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="logout_setting">Logout</string>
+    <string name="change_contact">Change Contact</string>
+    <string name="new_contact_number">New Contact Number</string>
+    <string name="change_email">Change Email</string>
+    <string name="new_email">New Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="password_email">Email</string>
+    <string name="password_old_password">Old Password</string>
+    <string name="pass_new_password">New Password</string>
+    <string name="general_choose_language">Choose Language</string>
+    <string name="language">Language :</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="about_our_service">About Our Service</string>
+    <string name="password_confirm">Confirm</string>
+    <string name="password_cancel">Cancel</string>
+    <string name="contact_confirm">Confirm</string>
+    <string name="contact_cancel">Cancel</string>
+    <string name="email_confirm">Confirm</string>
+    <string name="email_cancel">Cancel</string>
+    <string name="old_contact_number">Old Contact Number</string>
+    <string name="book_details">Book Details</string>
+    <string name="borrow_now">Borrow Now</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="borrow_book_date">Borrow Book</string>
+    <string name="choose_your_dates">Choose Your Dates !</string>
+    <string name="selected_dates">Selected Dates</string>
+    <string name="borrow_confirm">Confirm</string>
+    <string name="sub_total">Sub Total :</string>
+    <string name="check_out">Check out</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="write_to_us">write to us</string>
+    <string name="call_us">call us</string>
+    <string name="search_by_book_title">Search by book title</string>
+    <string name="history">History</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="payment_visa">Payment Visa</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="payment_name">Name:</string>
+    <string name="payment_email">Email:</string>
+    <string name="payment_contact_number">Contact Number:</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="card_number">Card Number(**** **** **** ****)</string>
+    <string name="valid_date">Valid date(**/**)</string>
+    <string name="cvc_code_on_the_back">CVC Code (on the back)</string>
+    <string name="payment_cancel">Cancel</string>
+    <string name="payment_process">Process</string>
+    <string name="payment_successful">Payment Successful!!</string>
+    <string name="lets_enjoy_your_time">Lets enjoy your time =)</string>
+    <string name="my_cart">My Cart</string>
+    <string name="my_profile_contact_us">Contact Us</string>
+    <string name="my_profile_settings">Settings</string>
+    <string name="my_profile1">My Profile</string>
+
+
 </resources>

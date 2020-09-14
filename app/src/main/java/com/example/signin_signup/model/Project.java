@@ -15,7 +15,9 @@ public class Project {
         this.Author = Author;
         this.Summary = Summary;
 
+
     }
+
 
     public String getTitle() {
         return Title;

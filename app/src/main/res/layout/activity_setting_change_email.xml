@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@drawable/setting_change"
+    tools:context=".SettingChangeEmail">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/change_email"
+        android:drawableLeft="@drawable/ic_action_back"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_email"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="320dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="312dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:background="#FFFFFF"
+            android:ems="10"
+            android:hint="Enter New Email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="129dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounder_button"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_confirm"
+        android:text="@string/email_confirm"
+        android:layout_gravity="center"
+        android:textColor="#09610C"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="130dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rounder_button"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/ic_action_cancel"
+        android:text="@string/email_cancel"
+        android:textColor="#A31717"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

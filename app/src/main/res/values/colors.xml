@@ -7,4 +7,12 @@
     <color name="colorPurple">#907FED</color>
     <color name="colorRed">#F91207</color>
     <color name="colorGreen">#16F907</color>
+    <color name="colorPrimaryNight">#16202c</color>
+    <color name="colorPrimaryDarkNight">#141d26</color>
+    <color name="colorButtonNight">#424141</color>
+    <color name="colorAccentNight">#FFFFFF</color>
+    <color name="primaryTitleColor">#212121</color>
+    <color name="primaryTitleColorNight">#FFFFFF</color>
+    <color name="colorButton">#FFFFFF</color>
+
 </resources>

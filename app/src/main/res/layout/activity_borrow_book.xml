@@ -17,10 +17,25 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="107dp"
         android:layout_marginRight="107dp"
-        android:text="Borrow Book"
+        android:text="@string/borrow_book_date"
         android:textColor="#000000"
         android:textSize="30sp"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="190dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewExplore"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/date_pic" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
     <TextView
         android:id="@+id/selected_dates"
@@ -29,13 +44,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="270dp"
         android:layout_marginEnd="98dp"
         android:layout_marginRight="98dp"
-        android:text="Selected Dates"
+        android:text="@string/selected_dates"
         android:textColor="#000000"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_choose_date"
@@ -44,32 +58,31 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginRight="98dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/rounded_button3"
         android:drawableLeft="@drawable/ic_action_date"
         android:paddingLeft="20dp"
-        android:text="Choose Your Dates !"
+        android:text="@string/choose_your_dates"
         android:textColor="#000000"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_confirm"
-        android:layout_width="212dp"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="69dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
         android:layout_marginBottom="96dp"
         android:background="@drawable/rounded_button3"
         android:drawableLeft="@drawable/ic_action_book"
         android:paddingLeft="20dp"
-        android:text="Confirm"
+        android:text="@string/borrow_confirm"
         android:textColor="#000000"
         android:textStyle="bold" />
 
@@ -87,5 +100,6 @@
             app:itemTextColor="#000000"
             app:labelVisibilityMode="labeled"
             app:menu="@menu/bottom_navigation_menu" />
+
 
 </RelativeLayout>
